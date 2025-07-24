@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plongée recycleur privée à Rangiroa - Private rebreather diving in Rangiroa lagoon">
+  <title>Rangiroa Rebreather Diving</title>
+  <style>
+    body {font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f4f9fb; color: #003049; line-height: 1.6;}
+    header {background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover; height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding: 20px;}
+    header h1 {font-size: 3rem; background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px;}
+    header p {font-size: 1.2rem; margin-top: 20px; background: rgba(0,0,0,0.3); padding: 10px 15px; border-radius: 8px;}
+    nav {background: #006d77; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; position: sticky; top: 0; z-index: 100;}
+    nav .menu {display: flex; gap: 20px;}
+    nav a {color: white; text-decoration: none; font-weight: bold; transition: 0.3s;}
+    nav a:hover {text-decoration: underline;}
+    .lang-select {background: white; color: #006d77; border: none; padding: 5px 10px; font-weight: bold; border-radius: 5px; cursor: pointer;}
+    section {padding: 60px 20px; max-width: 1000px; margin: auto;}
+    section h2 {text-align: center; margin-bottom: 20px; font-size: 2rem;}
+    .btn {display: inline-block; background: #006d77; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: 0.3s;}
+    .btn:hover {background: #004f56;}
+    .tarif-table {width: 100%; border-collapse: collapse; margin-top: 20px;}
+    .tarif-table th, .tarif-table td {padding: 12px; border-bottom: 1px solid #ddd; text-align: left;}
+    .gallery {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px;}
+    .gallery img {width: 100%; border-radius: 10px;}
+    footer {text-align: center; padding: 20px; background: #003049; color: white;}
+    footer a {color: #ffdd57; text-decoration: none;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <a href="#home" data-fr="Accueil" data-en="Home">Accueil</a>
+      <a href="#rangiroa" data-fr="Rangiroa" data-en="Rangiroa">Rangiroa</a>
+      <a href="#dives" data-fr="Plongées" data-en="Dives">Plongées</a>
+      <a href="#rates" data-fr="Tarifs" data-en="Rates">Tarifs</a>
+      <a href="#gallery" data-fr="Galerie" data-en="Gallery">Galerie</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+    <select class="lang-select" id="langSelect">
+      <option value="fr">FR</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
+
+  <header id="home">
+    <h1 id="mainTitle">Plongée Recycleur Privée à Rangiroa</h1>
+    <p data-fr="Explorez le lagon de Rangiroa en silence absolu, découvrez la magie de la plongée en recycleur." 
+       data-en="Explore Rangiroa lagoon in total silence, discover the magic of rebreather diving.">
+       Explorez le lagon de Rangiroa en silence absolu, découvrez la magie de la plongée en recycleur.
+    </p>
+    <a href="#contact" class="btn" data-fr="Réserver maintenant" data-en="Book Now">Réserver maintenant</a>
+  </header>
+
+  <section id="rangiroa">
+    <h2 data-fr="Pourquoi Rangiroa ?" data-en="Why Rangiroa?">Pourquoi Rangiroa ?</h2>
+    <p data-fr="Rangiroa, situé dans l’archipel des Tuamotu en Polynésie française, est l’un des plus grands atolls du monde. Ses passes mythiques comme Tiputa et Avatoru offrent des rencontres spectaculaires : dauphins, requins marteaux, mantas et bancs de carangues dans une visibilité incroyable."
+       data-en="Rangiroa, located in the Tuamotu Archipelago in French Polynesia, is one of the largest atolls in the world. Its famous passes like Tiputa and Avatoru offer spectacular encounters: dolphins, hammerhead sharks, mantas, and schools of jacks in crystal-clear visibility.">
+       Rangiroa est un atoll exceptionnel...
+    </p>
+  </section>
+
+  <section id="dives">
+    <h2 data-fr="Nos plongées recycleur" data-en="Our Rebreather Dives">Nos plongées recycleur</h2>
+    <p data-fr="Nous proposons des plongées 100% personnalisées, adaptées à votre expérience et vos envies. Que vous soyez un plongeur confirmé ou un passionné souhaitant progresser, nous vous accompagnons en toute sécurité."
+       data-en="We offer fully personalized dives, adapted to your experience and goals. Whether you are an experienced diver or an enthusiast looking to improve, we guide you safely.">
+       Nous proposons des plongées adaptées...
+    </p>
+    <ul>
+      <li data-fr="Encadrement par un instructeur recycleur certifié" data-en="Supervised by a certified rebreather instructor">Encadrement par un instructeur recycleur certifié</li>
+      <li data-fr="Sites mythiques : Tiputa, Avatoru, récif extérieur" data-en="Iconic dive sites: Tiputa, Avatoru, outer reef">Sites mythiques : Tiputa, Avatoru, récif extérieur</li>
+      <li data-fr="Matériel haut de gamme, préparation rigoureuse" data-en="Premium equipment, carefully maintained">Matériel haut de gamme, préparation rigoureuse</li>
+    </ul>
+    <a class="btn" href="#contact" id="bookBtn" data-fr="Réserver votre plongée" data-en="Book your dive">Réserver votre plongée</a>
+  </section>
+
+  <section id="rates">
+    <h2 data-fr="Tarifs & Packs" data-en="Rates & Packages">Tarifs & Packs</h2>
+    <table class="tarif-table">
+      <tr><th data-fr="Prestation" data-en="Service">Prestation</th><th data-fr="Prix (€)" data-en="Price (€)">Prix (€)</th></tr>
+      <tr><td data-fr="Plongée privée demi-journée" data-en="Private half-day dive">Plongée privée demi-journée</td><td>250 €</td></tr>
+      <tr><td data-fr="Location recycleur (si nécessaire)" data-en="Rebreather rental (if needed)">Location recycleur</td><td>100 €</td></tr>
+      <tr><td data-fr="Pack 3 plongées" data-en="3-dive package">Pack 3 plongées</td><td>650 €</td></tr>
+    </table>
+  </section>
+
+  <section id="gallery">
+    <h2 data-fr="Galerie Photo" data-en="Photo Gallery">Galerie Photo</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1558980664-10ea0f6734f7?auto=format&fit=crop&w=800&q=80" alt="Plongée à Rangiroa">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Lagon">
+      <img src="https://images.unsplash.com/photo-1504609813443-562f1f2f94f4?auto=format&fit=crop&w=800&q=80" alt="Requin marteau">
+      <img src="https://images.unsplash.com/photo-1516542076529-1ea3854896ea?auto=format&fit=crop&w=800&q=80" alt="Manta ray">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 data-fr="Contact & Réservation" data-en="Contact & Booking">Contact & Réservation</h2>
+    <p>Email: <a href="mailto:info@rangiroa-rebreather.com">info@rangiroa-rebreather.com</a></p>
+    <p><span data-fr="Téléphone / WhatsApp" data-en="Phone / WhatsApp">Téléphone / WhatsApp</span>: +689 XX XX XX XX</p>
+    <a class="btn" href="https://wa.me/689XXXXXXXX" target="_blank">WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Rangiroa Rebreather Diving - <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span>
+  </footer>
+
+  <script>
+    const langSelect = document.getElementById('langSelect');
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      document.getElementById('mainTitle').textContent =
+        lang === 'fr' ? 'Plongée Recycleur Privée à Rangiroa' : 'Private Rebreather Diving in Rangiroa';
+    }
+    langSelect.addEventListener('change', (e) => {
+      switchLanguage(e.target.value);
+    });
+  </script>
+</body>
+</html>
